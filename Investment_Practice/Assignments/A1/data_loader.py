@@ -21,10 +21,10 @@ def load_etf_data():
     """
     try:
         # Load price data
-        prices = pd.read_csv('qqq_tqqq_prices.csv', index_col=0, parse_dates=True)
+        prices = pd.read_csv('./qqq_tqqq_prices.csv', index_col=0, parse_dates=True)
 
         # Load returns data
-        returns = pd.read_csv('qqq_tqqq_returns.csv', index_col=0, parse_dates=True)
+        returns = pd.read_csv('./qqq_tqqq_returns.csv', index_col=0, parse_dates=True)
 
         # Clean any missing data
         prices = prices.dropna()
